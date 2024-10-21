@@ -1,0 +1,118 @@
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 750vh;
+    height: 100vh;
+    background-image:url(img/album/ALBUM2.JPG);
+    background-color: black;
+    background-size:cover;
+    background-attachment: scroll;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-position: center center;
+    
+
+}
+.card {
+    border-radius: 50px;
+    margin-left: 10px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    transition: 0.3s all ease;
+    width: 200px;
+    font-size: 12px;
+    font-family: Arial;
+    display: flex; /* Mengubah display menjadi flex */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0; /* Menghapus padding agar konten benar-benar terpusat */
+
+    
+}
+.card:hover{
+    flex:2;
+    background-color: rgb(210, 107, 107) ;
+    
+}
+.primary-button a {
+    display: inline-block;
+    background-color: #fe8738;
+    padding: 10px 30px; /* Sesuaikan padding untuk menyeimbangkan tinggi tombol */
+    border-radius: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700; /* Sesuaikan font-weight, biasanya 400, 700 */
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    height: auto; /* Biarkan tinggi otomatis agar bisa menampung teks */
+    line-height: 30px; /* Atur line-height agar teks vertikalnya berada di tengah */
+    position: absolute; /* Membuat elemen ini berada di posisi absolut */
+    bottom: 0; /* Menempatkan elemen di bagian bawah container */
+    left: 50%; /* Menempatkan elemen di tengah secara horizontal */
+    transform: translateX(-50%); /* Menggeser elemen agar benar-benar di tengah */
+}
+* {
+    box-sizing: border-box; /* Mengatur box model untuk semua elemen */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background: url('https://example.com/background-image.jpg') no-repeat center center fixed; /* Ganti dengan URL gambar background */
+    background-size: cover;
+    position: relative;
+    background-color: black;
+}
+
+.audio-controls {
+    background-color: rgba(104, 100, 52, 0.9); /* Latar belakang putih semi-transparan */
+    padding: 10px 10px; /* Padding untuk kontrol */
+    border-radius: 5px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(171, 177, 17, 0.2); /* Bayangan dari bawah */
+    display: flex; /* Mengatur flexbox untuk tombol */
+    align-items: center; /* Mengatur elemen di tengah secara vertikal */
+    position: absolute; /* Mengatur posisi absolut */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 50px; /* Jarak dari kanan */
+}
+
+.album-cover {
+    width: 65px; /* Ukuran lebar gambar album */
+    height: 65px; /* Ukuran tinggi gambar album */
+    border-radius: 5px; /* Sudut membulat gambar album */
+    margin-right: 15px; /* Jarak antara gambar album dan tombol */
+}
+
+.buttons {
+    display: flex; /* Mengatur flexbox untuk tombol */
+    justify-content: space-around; /* Mengatur tombol dengan ruang di antaranya */
+}
+
+.buttons button {
+    background-color: #0c0805; /* Warna latar belakang tombol */
+    border: none;
+    color: white; /* Warna teks */
+    padding: 10px 25px; /* Ukuran tombol */
+    border-radius: 80px; /* Sudut membulat tombol */
+    text-transform: uppercase; /* Huruf kapital semua */
+    font-size: 14px; /* Ukuran font */
+    font-weight: 700; /* Ketebalan font */
+    cursor: pointer; /* Kursor tangan */
+    transition: background-color 0.3s; /* Transisi untuk hover */
+}
+
+.buttons button:hover {
+    background-color: #e56b1f; /* Mengubah warna latar belakang saat hover */
+}
+
+.buttons button:active {
+    transform: scale(0.95); /* Efek mengecil saat tombol ditekan */}
